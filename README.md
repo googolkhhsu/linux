@@ -2,5 +2,5 @@
 ===========
 
 ## find
-* find <PATH> -type f -name "*.php"
+* find &lt;PATH&rt; -type f -name "*.php"
 

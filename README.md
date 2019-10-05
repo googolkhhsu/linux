@@ -7,7 +7,7 @@
 		* find /home/website/html/ -type f -name "*.php"
 		* find /home/website/html/ -type -f-name "*.php" -exec ls {} +
 	* 嵌入指令的例子
-		* tar cvzf tarball.tar.gz $(find /home/website/html/ -type -f-name "*.php" -exec ls {} +)
+		* tar cvzf tarball.tar.gz $(find /home/website/html/ -type f -name "*.php" -exec ls {} +)
 
 
 

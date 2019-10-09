@@ -13,6 +13,9 @@
 		* find /home/website/html/ -type f -iname "\*.php" -exec ls {} + -o -iname "\*.xml" -exec ls {} +
 			
 			說明: 效果與上個例子相似，但實際上卻不相同
+			
+		* find /home/website/html/ -type f \\( -iname "\*.php" -o -iname "\*.xml" -o -iname "\*.js" -o -iname "\*.html" \\) -exec ls {} +
+
 		
 	* 嵌入指令的例子
 		* tar cvzf tarball.tar.gz $(find /home/website/html/ -type f -name "*.php" -exec ls {} +)

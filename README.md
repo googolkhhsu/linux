@@ -22,6 +22,19 @@
 	* 嵌入指令的例子
 		* tar cvzf tarball.tar.gz $(find /home/website/html/ -type f -name "*.php" -exec ls {} +)
 
+## grep
+* grep --color=auto "[[:digit:]]*\.[[:digit:]]*\.[[:digit:]]*\.[[:digit:]]" Hisi_log/Hisi_log/android/android_2.log
+
+* grep --color=auto -E "([0-9]{1,3}[\.]){3}[0-9]{1,3}" Hisi_log/Hisi_log/android/android_2.log
+
+* grep --color=auto -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" Hisi_log/Hisi_log/android/android_2.log
+
+*  grep --color=auto -E "112.4.131.214.*zip" 2019112115-svc.ptsharp.gitv.tv
+
+
+
+
+
 
 
 

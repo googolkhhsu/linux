@@ -15,7 +15,7 @@
 			說明: 效果與上個例子相似，但實際上卻不相同
 			
 		* find /home/website/html/ -type f \\( -iname "\*.php" -o -iname "\*.xml" -o -iname "\*.js" -o -iname "\*.html" \\) -exec ls {} +
-		* find /home/website/htim/ -type f ! \\( -iname "\*.txt" -o iname "\*.zip" -o -iname "\*.apk" -o -iname 95 -o -iname 177 -o -iname "\*.7z" \\) -exec ls {} + | sed 's/\\ /\\\\ /g'
+		* find /home/website/htim/ -type f ! \\( -iname "\*.txt" -o -iname "\*.zip" -o -iname "\*.apk" -o -iname 95 -o -iname 177 -o -iname "\*.7z" \\) -exec ls {} + | sed 's/\\ /\\\\ /g'
 
 			說明: 找出排除項目類型的檔案並列出，如果列出的檔案名稱有空白字元，將其加入反斜線符號(\)
 		
@@ -29,7 +29,7 @@
 
 * grep --color=auto -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" Hisi_log/Hisi_log/android/android_2.log
 
-*  grep --color=auto -E "112.4.131.214.*zip" 2019112115-svc.ptsharp.gitv.tv
+* grep --color=auto -E "112.4.131.214.*zip" 2019112115-svc.ptsharp.gitv.tv
 
 
 
